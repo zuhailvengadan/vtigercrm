@@ -24,6 +24,16 @@ public class loginPage extends BaseClass {
 	@FindBy(id = "submitButton")
 	private WebElement LoginButton;
 
+	@FindBy(className="errorMessage")
+	private WebElement errorMessage;
+	
+	/**
+	 * @return the errorMessage
+	 */
+	public WebElement getErrorMessage() {
+		return errorMessage;
+	}
+
 	public WebElement getLogo() {
 		return logo;
 	}
@@ -51,5 +61,10 @@ public class loginPage extends BaseClass {
 	public void clickLoginButton() {
 		LoginButton.click();
 	}
-
+	public WebElement getUserName() {
+	return	userNameTB;
+	}
+	public WebElement getPassword() {
+	return	passwordTB;
+	}
 }

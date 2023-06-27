@@ -25,7 +25,29 @@ public class LeadPage extends BaseClass{
 	@FindBy(name="company")
 	private WebElement companyTB ;
 	
+	@FindBy(className="dvHeaderText")
+	private WebElement ExistingLeadHeader;
 	
+	
+	/**
+	 * @return the exixtingLeadHeader
+	 */
+	public WebElement getExistingLeadHeader() {
+		return ExistingLeadHeader;
+	}
+	
+	/**
+	 * @return the firstExistingLeadLastNameIcon
+	 */
+	public WebElement getFirstExistingLeadLastNameIcon() {
+		return firstExistingLeadLastNameIcon;
+	}
+	/**
+	 * @param firstExistingLeadLastNameIcon the firstExistingLeadLastNameIcon to set
+	 */
+	public void setFirstExistingLeadLastNameIcon(WebElement firstExistingLeadLastNameIcon) {
+		this.firstExistingLeadLastNameIcon = firstExistingLeadLastNameIcon;
+	}
 	@FindBy(xpath="//input[@class='crmButton small save']")
 	private WebElement saveButton ;
 	
@@ -40,6 +62,12 @@ public class LeadPage extends BaseClass{
 	
 	@FindBy(xpath="//table[@class='lvtBg']/descendant::div/descendant::tr[3]/td[2]")
 	private WebElement firstLeadData;
+	
+	@FindBy(xpath="//table[@class='lvt small']/descendant::tr[3]/td[3]/a")
+	private WebElement firstExistingLeadLastNameIcon;
+	
+	
+	
 public LeadPage(WebDriver driver) {
 	PageFactory.initElements(driver,this);
 }

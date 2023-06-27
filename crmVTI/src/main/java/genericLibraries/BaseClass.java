@@ -81,7 +81,7 @@ public class BaseClass {
 
 		s.assertTrue(driver.getCurrentUrl().equals("http://localhost:8888/index.php?action=Login&module=Users"));
 
-		System.out.println("sign out successfull");
+		System.out.println("sign out  successfull");
 
 		driver.close();
 	}

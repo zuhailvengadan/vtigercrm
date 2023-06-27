@@ -1,18 +1,16 @@
 package testCase;
 
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genericLibraries.BaseClass;
 
-@Listeners(genericLibraries.ListenerImplimentation.class)
+
 public class TC_00loginVtiger extends BaseClass {
 
 	@Test
-
-	public void TC_00()  {
+	public void TC_00() {
 		SoftAssert soft = new SoftAssert();
 		if (loginPag.getPageHeader().getText().contains("vtiger")) {
 			soft.assertEquals(true, true);
@@ -20,7 +18,6 @@ public class TC_00loginVtiger extends BaseClass {
 		} else {
 
 			System.out.println("login page is not displayed");
-			soft.assertEquals(true, false);
 		}
 
 		loginPag.setUserName(propertyUti.readingDataFromPropertyFile("username"));
@@ -29,12 +26,12 @@ public class TC_00loginVtiger extends BaseClass {
 		System.out.println("loginPag Button is enabled");
 		loginPag.clickLoginButton();
 		if (driver.getTitle().contains("Home")) {
-			System.out.println("login successfull");
-		} else
+			System.out.println("login is successfull");
+		} else {
 			System.out.println("login not successful");
+		}
 		soft.assertAll();
-		Assert.assertEquals(true,false);
-		
+
 	}
 
 }

@@ -5,14 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import genericLibraries.ExcelUtility;
-import genericLibraries.ExcelUtility.ReadMultipleDataFromExcel;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class dataproviders {
 
 
-	@Test(dataProvider = "testdata", dataProviderClass = ReadMultipleDataFromExcel.class)
+	@Test(dataProvider = "testdata", dataProviderClass =genericLibraries.ExcelUtility.class)
 	public void ReadingFrmExternalData(String un, String pwd) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
