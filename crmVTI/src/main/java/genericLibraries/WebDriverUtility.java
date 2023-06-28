@@ -115,6 +115,10 @@ public class WebDriverUtility extends BaseClass {
 		WebDriverWait wait=new WebDriverWait(driver,10);
 		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	public Boolean ExplicitWaitforinvisi(WebElement element) {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		return wait.until(ExpectedConditions.invisibilityOf(element));
+	}
 
 	public void switchToWindow(Set<String> allWindowId) {
 		for (String id : allWindowId) {

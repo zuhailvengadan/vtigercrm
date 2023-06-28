@@ -9,7 +9,21 @@ import genericLibraries.BaseClass;
 
 public class LeadPage extends BaseClass{
 	
-	
+	@FindBy(xpath="(//input[@value=\"Duplicate\"])[1]")
+	private WebElement duplicateButton;
+	/**
+	 * @return the duplicateButton
+	 */
+	public WebElement getDuplicateButton() {
+		return duplicateButton;
+	}
+
+	/**
+	 * @param duplicateButton the duplicateButton to set
+	 */
+	public void setDuplicateButton(WebElement duplicateButton) {
+		this.duplicateButton = duplicateButton;
+	}
 	@FindBy(className="hdrLink")
 	private WebElement pageHeader;
 	
