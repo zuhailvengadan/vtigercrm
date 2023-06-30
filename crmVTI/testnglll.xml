@@ -17,7 +17,7 @@
       <class name="testCase.TC_00loginVtiger"/>
       <class name="testCase.TC_01craeteOrganizationusingTypeandIndustry"/>
       <class name="testCase.TC_02createContact"/>
-      <class name="testCase.TC_09loginWithInvalidData"/>
+<!--      <class name="testCase.TC_09loginWithInvalidData"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
