@@ -1,4 +1,4 @@
- package genericLibraries;
+package genericLibraries;
 
 import java.util.concurrent.TimeUnit;
 
@@ -33,7 +33,7 @@ public class BaseClass {
 	public HomePage homePag;
 	public LeadPage leadPag;
 	public QuickPage quickPag;
-	
+	public ListenerImplimentation list;
 
 	@BeforeClass(alwaysRun = true)
 	public void cofigclass() {
@@ -41,6 +41,8 @@ public class BaseClass {
 		webDriverUti = new WebDriverUtility();
 		screenShot = new ScreenShot();
 		javauti = new JavaUtility();
+		list=new ListenerImplimentation();
+
 	}
 
 	@BeforeMethod(alwaysRun = true)
@@ -63,9 +65,9 @@ public class BaseClass {
 		loginPag = new loginPage(driver);
 		homePag = new HomePage(driver);
 		leadPag = new LeadPage(driver);
-		quickPag =new QuickPage(driver);
-		organizationPag=new OrganizationPage(driver);
-		contactPag=new ContactPage(driver);
+		quickPag = new QuickPage(driver);
+		organizationPag = new OrganizationPage(driver);
+		contactPag = new ContactPage(driver);
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -75,6 +77,9 @@ public class BaseClass {
 
 	@AfterMethod
 	public void aftermeth() {
+   
+	
+	
 		SoftAssert s = new SoftAssert();
 		webDriverUti.mouseHoveringOnElement(homePag.administratorDD());
 		homePag.clickOnSignOutIcon();
@@ -84,5 +89,6 @@ public class BaseClass {
 		System.out.println("sign out  successfull");
 
 		driver.close();
+	
 	}
 }

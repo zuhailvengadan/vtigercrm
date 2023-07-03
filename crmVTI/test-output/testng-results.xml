@@ -2,28 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-28T15:09:10 IST" name="Default suite" finished-at="2023-06-28T15:10:07 IST" duration-ms="57848">
+  <suite started-at="2023-07-03T12:53:58 IST" name="Default suite" finished-at="2023-07-03T12:54:12 IST" duration-ms="13050">
     <groups>
     </groups>
-    <test started-at="2023-06-28T15:09:10 IST" name="Default test" finished-at="2023-06-28T15:10:07 IST" duration-ms="57848">
-      <class name="testCase.TC_10CreateDuplicateAndDeleteLead">
-        <test-method is-config="true" signature="cofigclass()[pri:0, instance:testCase.TC_10CreateDuplicateAndDeleteLead@2892d68]" started-at="2023-06-28T15:09:10 IST" name="cofigclass" finished-at="2023-06-28T15:09:10 IST" duration-ms="25" status="PASS">
+    <test started-at="2023-07-03T12:53:58 IST" name="Default test" finished-at="2023-07-03T12:54:12 IST" duration-ms="13050">
+      <class name="testCase.TC_09loginWithInvalidData_Test">
+        <test-method is-config="true" signature="cofigclass()[pri:0, instance:testCase.TC_09loginWithInvalidData_Test@6e6f2380]" started-at="2023-07-03T12:53:59 IST" name="cofigclass" finished-at="2023-07-03T12:53:59 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cofigclass -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCase.TC_10CreateDuplicateAndDeleteLead@2892d68]" started-at="2023-06-28T15:09:10 IST" name="launchBrowser" finished-at="2023-06-28T15:09:21 IST" duration-ms="11116" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCase.TC_09loginWithInvalidData_Test@6e6f2380]" started-at="2023-07-03T12:53:59 IST" name="launchBrowser" finished-at="2023-07-03T12:54:03 IST" duration-ms="3925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="TC_10()[pri:0, instance:testCase.TC_10CreateDuplicateAndDeleteLead@2892d68]" started-at="2023-06-28T15:09:21 IST" name="TC_10" finished-at="2023-06-28T15:10:05 IST" duration-ms="44239" status="PASS">
+        <test-method signature="TC_09(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_09loginWithInvalidData_Test@6e6f2380]" started-at="2023-07-03T12:54:03 IST" name="TC_09" data-provider="loginData" finished-at="2023-07-03T12:54:08 IST" duration-ms="4787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zuhail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method is-config="true" signature="aftermeth()[pri:0, instance:testCase.TC_10CreateDuplicateAndDeleteLead@2892d68]" started-at="2023-06-28T15:10:05 IST" name="aftermeth" finished-at="2023-06-28T15:10:07 IST" duration-ms="2394" status="PASS">
+        </test-method> <!-- TC_09 -->
+        <test-method is-config="true" signature="aftermeth()[pri:0, instance:testCase.TC_09loginWithInvalidData_Test@6e6f2380]" started-at="2023-07-03T12:54:08 IST" name="aftermeth" finished-at="2023-07-03T12:54:12 IST" duration-ms="3451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermeth -->
-      </class> <!-- testCase.TC_10CreateDuplicateAndDeleteLead -->
+      </class> <!-- testCase.TC_09loginWithInvalidData_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

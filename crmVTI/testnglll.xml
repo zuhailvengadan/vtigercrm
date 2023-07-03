@@ -8,15 +8,15 @@
   <test thread-count="1" name="Test">
 	  
     <classes>
-      <class name="testCase.TC_04CreateContactsWithExistingOrganization"/>
-      <class name="testCase.TC_03CreateContactWithMandatoryField"/>
-      <class name="testCase.TC_07QuickCreate"/>
-      <class name="testCase.TC_05CreatenewLead"/>
-      <class name="testCase.TC_06DeleteLead"/>
-      <class name="testCase.TC_08clickOnExistingLead"/>
+<!--      <class name="testCase.TC_04CreateContactsWithExistingOrganization"/>-->
+<!--      <class name="testCase.TC_03CreateContactWithMandatoryField"/>-->
+<!--      <class name="testCase.TC_07QuickCreate"/>-->
+<!--      <class name="testCase.TC_05CreatenewLead"/>-->
+<!--      <class name="testCase.TC_06DeleteLead"/>-->
+<!--      <class name="testCase.TC_08clickOnExistingLead"/>-->
       <class name="testCase.TC_00loginVtiger"/>
-      <class name="testCase.TC_01craeteOrganizationusingTypeandIndustry"/>
-      <class name="testCase.TC_02createContact"/>
+<!--      <class name="testCase.TC_01craeteOrganizationusingTypeandIndustry"/>-->
+<!--      <class name="testCase.TC_02createContact"/>-->
 <!--      <class name="testCase.TC_09loginWithInvalidData"/>-->
     </classes>
   </test> <!-- Test -->

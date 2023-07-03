@@ -12,7 +12,7 @@ public class ListenerImplimentation  extends BaseClass implements ITestListener 
 
 	ExtentSparkReporter reporter = new ExtentSparkReporter("./reports/vtcrm.html");
 	ExtentReports reports = new ExtentReports();
-	public ExtentTest logger;
+	public static ExtentTest logger;
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -28,7 +28,7 @@ public class ListenerImplimentation  extends BaseClass implements ITestListener 
 	public void onTestFailure(ITestResult result) {
 		logger.log(Status.FAIL,"this is failed"+result.getMethod().getMethodName());
 		logger.addScreenCaptureFromPath(ScreenShot.takescreenshot(result.getMethod().getMethodName()));
-	
+//	driver.close();
 	}
 
 	@Override
