@@ -3,7 +3,6 @@ package testCase;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 
@@ -15,7 +14,7 @@ public class TC_09loginWithInvalidData_Test extends BaseClass {
 	@Test(dataProvider = "loginData", dataProviderClass = genericLibraries.ExcelUtility.class)
 
 	public void TC_09(String user, String pass) throws InterruptedException {
-		SoftAssert soft = new SoftAssert();
+		//SoftAssert soft = new SoftAssert();
 		boolean visibilityofHeader = loginPag.getPageHeader().getText().contains("vtiger");
 		Assert.assertEquals(true, visibilityofHeader);
 		System.out.println("login page is displayed");
