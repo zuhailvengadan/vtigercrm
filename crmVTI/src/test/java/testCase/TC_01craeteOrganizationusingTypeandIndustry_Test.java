@@ -20,6 +20,7 @@ public class TC_01craeteOrganizationusingTypeandIndustry_Test extends BaseClass 
 		Assert.assertEquals(organizationPag.getPageHeader().getText(), "Organizations");
 		System.out.println("organization page is displayed");
 		ListenerImplimentation.logger.log(Status.INFO, "Organisation page is displayed");
+		System.out.println("hi bro in test case 002");
 
 		organizationPag.getCreateButton().click();
 		String orgName = "qspider" + javauti.generatingRandomNumber(100);
