@@ -11,11 +11,15 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
+	
+	
 	<profiles>
 
 		<profile>
 			<id>integration</id>
 			<build>
+				
 
 				<plugins>
 					<plugin>
@@ -100,7 +104,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.1.0</version>
-			<scope>test</scope>
+			
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
